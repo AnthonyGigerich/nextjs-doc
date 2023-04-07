@@ -3,6 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 
 export default async function handler(req, res) {
+
+  console.log("___________________________________________", req, res)
+
   // Vérifiez la méthode HTTP (GET dans ce cas)
   if (req.method === 'GET') {
 
