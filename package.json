@@ -15,6 +15,7 @@
     "axios": "^1.3.4",
     "chart.js": "^4.1.1",
     "chroma-js": "^2.4.2",
+    "csv-parser": "^3.0.0",
     "date-fns": "^2.29.3",
     "express": "^4.18.2",
     "front-matter": "^4.0.2",
@@ -26,9 +27,11 @@
     "markdown-it": "^13.0.1",
     "marked": "^4.3.0",
     "next": "latest",
+    "plotly": "^1.0.6",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
-    "react-markdown": "^8.0.6"
+    "react-markdown": "^8.0.6",
+    "react-plotly.js": "^2.6.0"
   }
 }

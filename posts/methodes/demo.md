@@ -6,6 +6,7 @@ slug: demo
 type: Formation
 tags:
   - tag
+  - arbre
 index: 1 #1 = affiché dans les recherches ; #0 = masqué
 collection:
  - Algorithmes publics
