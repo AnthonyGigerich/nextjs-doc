@@ -21,6 +21,7 @@ export default async function handler(req, res) {
       });
 
       // Retournez les métadonnées YAML converties en JSON
+      res.setHeader('Content-Type', 'application/json');
       res.status(200).json(yamlMetadataAsJson);
     } catch (error) {
       res.status(500).json({ message: 'Erreur lors de la lecture des fichiers Markdown', error: error.message });
