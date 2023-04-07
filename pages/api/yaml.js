@@ -5,6 +5,8 @@ import matter from 'gray-matter';
 export default async function handler(req, res) {
   // Vérifiez la méthode HTTP (GET dans ce cas)
   if (req.method === 'GET') {
+
+    console.log("entering yaml.js")
     try {
       // Obtenez le chemin du dossier contenant les fichiers Markdown
       const markdownDirectory = path.join(process.cwd(), 'posts/cells');
@@ -21,6 +23,7 @@ export default async function handler(req, res) {
       });
 
       // Retournez les métadonnées YAML converties en JSON
+      console.log("Yaml to JSON successful", yamlMetadataAsJson)
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(yamlMetadataAsJson);
     } catch (error) {
