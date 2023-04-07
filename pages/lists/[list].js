@@ -112,7 +112,11 @@ function ListPage({ cells }) {
 }
 
 export async function getStaticPaths() {
+
+  console.log("building paths")
   const cells = await getCellDataFromApi();
+
+  console.log("cells", cells)
 
   // Récupérez toutes les listes distinctes présentes dans les cellules
   const lists = new Set();
