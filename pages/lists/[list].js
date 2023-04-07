@@ -117,8 +117,9 @@ export async function getStaticPaths() {
   const cells = await getCellDataFromApi();
 
   if (!cells) {
+    console.log("cells is null")
     return {
-      paths: [],
+      paths: null,
       fallback: false,
     };
   }
