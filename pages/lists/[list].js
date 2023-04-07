@@ -116,6 +116,12 @@ export async function getStaticPaths() {
   console.log("building paths")
   const cells = await getCellDataFromApi();
 
+  if (!cells) {
+    return {
+      notFound: true,
+    };
+  }
+
   console.log("cells", cells)
 
   // Récupérez toutes les listes distinctes présentes dans les cellules
