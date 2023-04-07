@@ -118,7 +118,8 @@ export async function getStaticPaths() {
 
   if (!cells) {
     return {
-      notFound: true,
+      paths: [],
+      fallback: false,
     };
   }
 
